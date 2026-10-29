@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progastro Linhares — Gastroenterologia, Coloproctologia e Endoscopia</title>
+<meta name="description" content="Progastro Linhares: gastroenterologia, coloproctologia, endoscopia digestiva e cirurgia do aparelho digestivo em Linhares-ES. Agende pelo WhatsApp (27) 3150-9669.">
+<meta name="theme-color" content="#C13828">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Progastro Linhares">
+<meta property="og:description" content="Gastroenterologia, coloproctologia, endoscopia digestiva e cirurgia do aparelho digestivo em Linhares-ES.">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C13828'/%3E%3Cpath d='M18 22l12-4-8 8 16-6-12 10 18-5-14 9 16-3' fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Progastro",
+  "legalName": "PROGASTRO SERVICOS MEDICOS LTDA",
+  "taxID": "01.752.177/0001-07",
+  "telephone": "+55-27-3150-9669",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Governador Santos Neves, 1271",
+    "addressLocality": "Linhares",
+    "addressRegion": "ES",
+    "postalCode": "29900-035",
+    "addressCountry": "BR"
+  },
+  "medicalSpecialty": ["Gastroenterologic", "Surgical", "Endoscopy"],
+  "employee": [
+    {"@type": "Physician", "name": "Dr. Jairo Rocha Filho"},
+    {"@type": "Physician", "name": "Dr. Rodrigo Rocha Batista"},
+    {"@type": "Physician", "name": "Dr. Carlos Alberto de Castro Alves"}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --terracota:#C13828;
+    --terracota-esc:#9E2A1C;
+    --cinza:#B7B8B8;
+    --cinza-texto:#6F6E6A;
+    --creme:#FAF6F0;
+    --creme-2:#F3ECE2;
+    --carvao:#36342E;
+    --branco:#FFFFFF;
+    --linha:#E6DED2;
+    --raio:18px;
+    --max:1160px;
+    --sombra:0 1px 2px rgba(54,52,46,.06),0 8px 28px rgba(54,52,46,.07);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{
+    margin:0;background:var(--creme);color:var(--carvao);
+    font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-weight:400;line-height:1.65;font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  @media (max-width:600px){.wrap{padding:0 16px}}
+
+  /* ---------- Marca (wordmark) ---------- */
+  .marca{display:inline-flex;align-items:flex-end;gap:10px;text-decoration:none}
+  .marca .rabisco{width:46px;height:46px;flex:none}
+  .marca .txt{display:flex;flex-direction:column;line-height:1}
+  .marca .pro{font-family:"Open Sans",sans-serif;font-weight:800;color:var(--cinza);font-size:14px;align-self:flex-end;margin-bottom:-3px;letter-spacing:-.02em}
+  .marca .gastro{font-family:"Open Sans",sans-serif;font-weight:800;color:var(--terracota);font-size:30px;letter-spacing:-.04em}
+  .marca .cidade{font-weight:300;color:var(--cinza);font-size:9.5px;letter-spacing:.62em;margin-top:3px}
+
+  /* ---------- Cabeçalho ---------- */
+  header.topo{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,246,240,.92);backdrop-filter:saturate(1.4) blur(10px);
+    -webkit-backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid transparent;transition:border-color .2s;
+  }
+  header.topo.rolou{border-color:var(--linha)}
+  .topo .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+  nav.menu ul{list-style:none;margin:0;padding:0;display:flex;gap:28px;align-items:center}
+  nav.menu a{text-decoration:none;font-size:14px;font-weight:500;color:var(--carvao);opacity:.85}
+  nav.menu a:hover{opacity:1;color:var(--terracota)}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;justify-content:center;
+    padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;
+    text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s;
+    min-height:44px;
+  }
+  .btn svg{width:20px;height:20px}
+  .btn-prim{background:var(--terracota);color:#fff;box-shadow:0 6px 18px rgba(193,56,40,.25)}
+  .btn-prim:hover{background:var(--terracota-esc);transform:translateY(-1px)}
+  .btn-sec{background:transparent;color:var(--carvao);border:1.5px solid var(--carvao)}
+  .btn-sec:hover{background:var(--carvao);color:var(--creme)}
+  .topo .btn{padding:10px 18px;font-size:14px}
+  .hamb{display:none;background:none;border:0;padding:10px;cursor:pointer;color:var(--carvao)}
+  .hamb svg{width:26px;height:26px}
+  @media (max-width:900px){
+    .hamb{display:block}
+    nav.menu{
+      position:absolute;top:76px;left:0;right:0;background:var(--creme);
+      border-bottom:1px solid var(--linha);display:none;
+    }
+    nav.menu.aberto{display:block}
+    nav.menu ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 16px}
+    nav.menu li a{display:block;padding:14px 4px;border-bottom:1px solid var(--linha);font-size:16px}
+    nav.menu li:last-child a{border:0}
+    .topo .btn-topo{display:none}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;padding:72px 0 88px}
+  .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .selo{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--terracota);
+    background:rgba(193,56,40,.08);padding:7px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .selo::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--terracota)}
+  h1{
+    font-weight:300;font-size:clamp(34px,5vw,56px);line-height:1.1;letter-spacing:-.02em;
+    margin:0 0 22px;color:var(--carvao);text-wrap:balance;
+  }
+  h1 strong{font-weight:600;color:var(--terracota)}
+  .hero p.lead{font-size:18px;font-weight:300;color:var(--cinza-texto);max-width:540px;margin:0 0 34px}
+  .hero .acoes{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-arte{position:relative;aspect-ratio:1/1;max-width:460px;justify-self:end;width:100%}
+  .hero-arte .disco{
+    position:absolute;inset:6%;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%,#fff 0,var(--creme-2) 70%);
+    box-shadow:inset 0 0 0 1px var(--linha);
+  }
+  .hero-arte svg{position:absolute;inset:0;width:100%;height:100%}
+  .rabisco-path{stroke-dasharray:2400;stroke-dashoffset:2400;animation:desenha 2.6s ease-out .2s forwards}
+  @keyframes desenha{to{stroke-dashoffset:0}}
+  @media (prefers-reduced-motion:reduce){.rabisco-path{animation:none;stroke-dashoffset:0}}
+  .dados-hero{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+  .dados-hero div{border-left:2px solid var(--terracota);padding-left:14px}
+  .dados-hero b{display:block;font-size:15px;font-weight:600}
+  .dados-hero span{font-size:13px;color:var(--cinza-texto)}
+  @media (max-width:900px){
+    .hero{padding:40px 0 64px}
+    .hero .grid{grid-template-columns:1fr;gap:28px}
+    .hero-arte{order:-1;max-width:260px;justify-self:center}
+  }
+
+  /* ---------- Seções ---------- */
+  section{padding:88px 0}
+  @media (max-width:600px){section{padding:64px 0}}
+  .cab-secao{max-width:640px;margin-bottom:48px}
+  .rotulo{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--terracota);margin:0 0 12px}
+  h2{font-weight:300;font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.015em;margin:0 0 16px;text-wrap:balance}
+  h2 strong{font-weight:600}
+  .cab-secao p{color:var(--cinza-texto);font-weight:300;font-size:17px;margin:0}
+  .fundo-branco{background:var(--branco)}
+
+  /* Especialidades */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  .card{
+    background:var(--creme);border:1px solid var(--linha);border-radius:var(--raio);
+    padding:30px 26px;transition:transform .2s,box-shadow .2s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:var(--sombra)}
+  .card .ico{
+    width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center;
+    margin-bottom:20px;box-shadow:inset 0 0 0 1px var(--linha);color:var(--terracota)
+  }
+  .card .ico svg{width:28px;height:28px}
+  .card h3{font-size:18px;font-weight:600;margin:0 0 8px}
+  .card p{margin:0;font-size:15px;font-weight:300;color:var(--cinza-texto)}
+
+  /* Exames */
+  .exames{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .exame{
+    background:#fff;border-radius:var(--raio);padding:36px;box-shadow:var(--sombra);
+    position:relative;overflow:hidden;
+  }
+  .exame::after{
+    content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;
+    background:rgba(193,56,40,.06);
+  }
+  .exame h3{font-size:22px;font-weight:600;margin:0 0 6px}
+  .exame .sub{font-size:14px;color:var(--terracota);font-weight:600;margin:0 0 16px}
+  .exame p{margin:0 0 18px;font-weight:300;color:var(--cinza-texto)}
+  .exame ul{margin:0;padding:0;list-style:none}
+  .exame li{padding:9px 0 9px 28px;position:relative;font-size:15px;border-top:1px solid var(--linha)}
+  .exame li::before{
+    content:"";position:absolute;left:4px;top:17px;width:12px;height:7px;
+    border-left:2px solid var(--terracota);border-bottom:2px solid var(--terracota);transform:rotate(-45deg);
+  }
+  @media (max-width:800px){.exames{grid-template-columns:1fr}.exame{padding:28px 22px}}
+
+  /* Corpo clínico */
+  .medicos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .medico{
+    background:var(--creme);border:1px solid var(--linha);border-radius:var(--raio);
+    padding:30px 26px;display:flex;flex-direction:column;
+  }
+  .avatar{
+    width:64px;height:64px;border-radius:50%;background:var(--terracota);color:#fff;
+    display:grid;place-items:center;font-weight:600;font-size:20px;letter-spacing:.02em;margin-bottom:20px;
+  }
+  .medico h3{font-size:19px;font-weight:600;margin:0 0 2px;line-height:1.3}
+  .medico .crm{font-size:13px;color:var(--cinza-texto);margin:0 0 18px;font-weight:500}
+  .medico .esp{list-style:none;margin:0;padding:0;border-top:1px solid var(--linha)}
+  .medico .esp li{padding:12px 0;border-bottom:1px solid var(--linha);font-size:14.5px}
+  .medico .esp b{display:block;font-weight:600}
+  .medico .esp span{font-size:12.5px;color:var(--cinza-texto)}
+  @media (max-width:960px){.medicos{grid-template-columns:1fr;max-width:560px}}
+
+  /* Alerta */
+  .alerta{
+    background:var(--carvao);color:var(--creme);border-radius:28px;padding:56px;
+    display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;
+  }
+  .alerta h2{color:#fff}
+  .alerta .rotulo{color:#F0B20C}
+  .alerta p{color:#D9D3C9;font-weight:300;margin:0 0 26px}
+  .alerta ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .alerta li{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);
+    border-radius:14px;padding:16px 18px;font-size:15px;line-height:1.45
+  }
+  .alerta li b{display:block;color:#fff;font-weight:600;margin-bottom:2px}
+  .alerta li span{font-size:13.5px;color:#C9C2B6}
+  @media (max-width:900px){.alerta{grid-template-columns:1fr;padding:36px 22px;gap:28px;border-radius:22px}}
+  @media (max-width:520px){.alerta ul{grid-template-columns:1fr}}
+
+  /* Contato */
+  .contato{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:stretch}
+  .info{background:#fff;border-radius:var(--raio);padding:36px;box-shadow:var(--sombra)}
+  .linha-info{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--linha)}
+  .linha-info:first-of-type{padding-top:0}
+  .linha-info:last-of-type{border-bottom:0}
+  .linha-info .ico{flex:none;width:42px;height:42px;border-radius:12px;background:rgba(193,56,40,.08);color:var(--terracota);display:grid;place-items:center}
+  .linha-info .ico svg{width:20px;height:20px}
+  .linha-info small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cinza-texto);font-weight:600}
+  .linha-info a,.linha-info p{margin:0;font-size:16px;font-weight:500;text-decoration:none}
+  .linha-info a:hover{color:var(--terracota)}
+  .info .btn{width:100%;margin-top:22px}
+  .mapa{border-radius:var(--raio);overflow:hidden;min-height:380px;box-shadow:var(--sombra);background:var(--creme-2)}
+  .mapa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+  @media (max-width:900px){.contato{grid-template-columns:1fr}.info{padding:28px 22px}}
+
+  /* Rodapé */
+  footer{background:var(--branco);border-top:1px solid var(--linha);padding:56px 0 28px;font-size:14px}
+  .rodape-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza-texto);margin:0 0 14px;font-weight:600}
+  footer p{margin:0 0 6px;color:var(--carvao)}
+  footer .legal{border-top:1px solid var(--linha);padding-top:22px;font-size:12.5px;color:var(--cinza-texto);line-height:1.6}
+  footer .legal p{color:var(--cinza-texto);margin:0 0 8px}
+  @media (max-width:820px){.rodape-grid{grid-template-columns:1fr;gap:28px}}
+
+  /* WhatsApp flutuante */
+  .wa-flut{
+    position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;
+    background:#25D366;color:#fff;display:grid;place-items:center;
+    box-shadow:0 8px 24px rgba(0,0,0,.18);transition:transform .15s;
+  }
+  .wa-flut:hover{transform:scale(1.06)}
+  .wa-flut svg{width:30px;height:30px}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.on{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  :focus-visible{outline:3px solid var(--terracota);outline-offset:3px;border-radius:6px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></g></symbol>
+</svg>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a href="#inicio" class="marca" aria-label="Progastro Linhares — início">
+      <svg class="rabisco" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M14 9l10-3-8 6 13-4-11 8 15-4-13 8 15-3-17 7 18-2-15 6 12-1-10 5 9 0" fill="none" stroke="#B7B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M38 4l-9 15" stroke="#C13828" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span class="txt">
+        <span class="pro">pro</span>
+        <span class="gastro">gastro</span>
+        <span class="cidade">LINHARES</span>
+      </span>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#exames">Exames</a></li>
+        <li><a href="#corpo-clinico">Corpo clínico</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-prim btn-topo" href="https://wa.me/552731509669?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Progastro." target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar
+    </a>
+    <button class="hamb" id="hamb" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap grid">
+      <div>
+        <span class="selo">Linhares · Espírito Santo</span>
+        <h1>Cuidado especializado em <strong>saúde digestiva</strong></h1>
+        <p class="lead">Gastroenterologia, coloproctologia, endoscopia digestiva e cirurgia do aparelho digestivo, com atendimento próximo e orientação clara em cada etapa — da consulta ao exame.</p>
+        <div class="acoes">
+          <a class="btn btn-prim" href="https://wa.me/552731509669?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Progastro." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn-sec" href="#corpo-clinico">Conheça a equipe</a>
+        </div>
+        <div class="dados-hero">
+          <div><b>3 médicos especialistas</b><span>Títulos registrados no CRM-ES</span></div>
+          <div><b>Consultas e exames</b><span>Endoscopia e colonoscopia</span></div>
+        </div>
+      </div>
+
+      <div class="hero-arte" aria-hidden="true">
+        <div class="disco"></div>
+        <svg viewBox="0 0 400 400">
+          <path class="rabisco-path" fill="none" stroke="#B7B8B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+            d="M150 70l60-18-46 34 74-22-66 46 86-24-78 46 86-18-90 36 96-14-84 34 70-6-112 26 120-12-108 30 96-8-104 26 46-2-42 18 28-6-22 20 30-14-18 26 26-22-10 28 24-26-6 28 24-24 0 26 22-20 8 20 18-14 14 14 12-10 12 10-30 10 34-2-30 14 30 0-24 12"/>
+          <path class="rabisco-path" fill="none" stroke="#C13828" stroke-width="7" stroke-linecap="round" d="M300 40L246 132" style="animation-delay:1.6s"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section class="fundo-branco" id="especialidades">
+    <div class="wrap">
+      <div class="cab-secao reveal">
+        <p class="rotulo">Especialidades</p>
+        <h2>Do esôfago ao intestino, <strong>uma equipe integrada</strong></h2>
+        <p>Atuamos de forma complementar no diagnóstico, acompanhamento clínico e tratamento cirúrgico das doenças do aparelho digestivo.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v6c0 2-2 3-2 6 0 4 3 6 7 6h2c3 0 5 2 5 4v2"/><path d="M19 4v5c0 2 2 3 4 4"/></svg></div>
+          <h3>Gastroenterologia</h3>
+          <p>Refluxo, gastrite, <em>H. pylori</em>, síndrome do intestino irritável, intolerâncias alimentares e doenças do fígado.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10c0-3 3-5 6-4l2 1c2 1 4 1 6 0l2-1c3-1 6 1 6 4v3c0 2-2 3-4 3H10c-2 0-4 1-4 3v3c0 3 3 5 6 4l2-1c2-1 4-1 6 0l2 1"/></svg></div>
+          <h3>Coloproctologia</h3>
+          <p>Doença hemorroidária, fissuras, fístulas, constipação e investigação de sangramento intestinal, com acolhimento e discrição.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="4"/><path d="M12 12c4 4 2 8 6 10s8-1 8 4"/><circle cx="9" cy="9" r="1" fill="currentColor"/></svg></div>
+          <h3>Endoscopia Digestiva</h3>
+          <p>Endoscopia digestiva alta e colonoscopia para diagnóstico, rastreamento e procedimentos terapêuticos.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26 20 12"/><path d="m18 10 4-4 4 4-4 4"/><path d="M6 26l-1 1"/><path d="M10 16l6 6"/></svg></div>
+          <h3>Cirurgia do Aparelho Digestivo</h3>
+          <p>Avaliação e tratamento cirúrgico de doenças do esôfago, estômago, intestino, vesícula e vias biliares.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="20" height="20" rx="5"/><path d="M16 11v10M11 16h10"/></svg></div>
+          <h3>Cirurgia Geral</h3>
+          <p>Hérnias, vesícula biliar e outros procedimentos cirúrgicos, com indicação criteriosa e acompanhamento pós-operatório.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMES -->
+  <section id="exames">
+    <div class="wrap">
+      <div class="cab-secao reveal">
+        <p class="rotulo">Exames endoscópicos</p>
+        <h2>Exames que <strong>previnem</strong>, não só diagnosticam</h2>
+        <p>Feitos com sedação e monitoramento, permitem enxergar o interior do tubo digestivo e, quando necessário, tratar lesões no mesmo procedimento.</p>
+      </div>
+      <div class="exames">
+        <article class="exame reveal">
+          <h3>Endoscopia digestiva alta</h3>
+          <p class="sub">Esôfago · Estômago · Duodeno</p>
+          <p>Avalia sintomas como azia persistente, dor no estômago, dificuldade para engolir e anemia sem causa aparente.</p>
+          <ul>
+            <li>Investigação de refluxo, gastrite e úlceras</li>
+            <li>Pesquisa de <em>H. pylori</em> por biópsia</li>
+            <li>Realizada sob sedação</li>
+          </ul>
+        </article>
+        <article class="exame reveal">
+          <h3>Colonoscopia</h3>
+          <p class="sub">Intestino grosso · Reto</p>
+          <p>Principal exame de rastreamento do câncer colorretal: identifica e remove pólipos antes que se tornem um problema.</p>
+          <ul>
+            <li>Rastreamento a partir dos 45 anos (risco habitual)</li>
+            <li>Investigação de sangramento e alteração do hábito intestinal</li>
+            <li>Retirada de pólipos no mesmo exame</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPO CLÍNICO -->
+  <section class="fundo-branco" id="corpo-clinico">
+    <div class="wrap">
+      <div class="cab-secao reveal">
+        <p class="rotulo">Corpo clínico</p>
+        <h2>Nossos <strong>médicos</strong></h2>
+        <p>Especialistas com títulos registrados no Conselho Regional de Medicina do Espírito Santo.</p>
+      </div>
+
+      <div class="medicos">
+        <article class="medico reveal">
+          <div class="avatar" aria-hidden="true">JR</div>
+          <h3>Dr. Jairo Rocha Filho</h3>
+          <p class="crm">CRM-ES 3043 · Diretor Técnico</p>
+          <ul class="esp">
+            <li><b>Gastroenterologia</b><span>RQE nº 3592</span></li>
+            <li><b>Cirurgia do Aparelho Digestivo</b><span>RQE nº 3593</span></li>
+          </ul>
+        </article>
+
+        <article class="medico reveal">
+          <div class="avatar" aria-hidden="true">RB</div>
+          <h3>Dr. Rodrigo Rocha Batista</h3>
+          <p class="crm">CRM-ES 8828</p>
+          <ul class="esp">
+            <li><b>Coloproctologia</b><span>RQE nº 7026</span></li>
+            <li><b>Cirurgia Geral</b><span>RQE nº 7025</span></li>
+          </ul>
+        </article>
+
+        <article class="medico reveal">
+          <div class="avatar" aria-hidden="true">CA</div>
+          <h3>Dr. Carlos Alberto de Castro Alves</h3>
+          <p class="crm">CRM-ES 3215</p>
+          <ul class="esp">
+            <li><b>Endoscopia Digestiva</b><span>RQE nº 3479</span></li>
+            <li><b>Coloproctologia</b><span>RQE nº 11803</span></li>
+            <li><b>Cirurgia Geral</b><span>RQE nº 3478</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SINAIS DE ALERTA -->
+  <section>
+    <div class="wrap">
+      <div class="alerta reveal">
+        <div>
+          <p class="rotulo">Quando procurar avaliação</p>
+          <h2>Sinais que <strong>merecem atenção</strong></h2>
+          <p>Muitas doenças digestivas são silenciosas no início. Se você percebe algum destes sinais, não espere passar sozinho: uma avaliação especializada esclarece a causa.</p>
+          <a class="btn btn-prim" href="https://wa.me/552731509669?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação
+          </a>
+        </div>
+        <ul>
+          <li><b>Sangue nas fezes</b><span>Nem sempre é hemorroida — todo sangramento deve ser avaliado.</span></li>
+          <li><b>Perda de peso sem explicação</b><span>Especialmente acompanhada de cansaço.</span></li>
+          <li><b>Dificuldade para engolir</b><span>Sensação de alimento "parado" no caminho.</span></li>
+          <li><b>Mudança no hábito intestinal</b><span>Prisão de ventre ou diarreia persistentes.</span></li>
+          <li><b>Azia frequente</b><span>Que exige antiácido quase todos os dias.</span></li>
+          <li><b>Anemia sem causa aparente</b><span>Pode indicar sangramento oculto no trato digestivo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="fundo-branco" id="contato">
+    <div class="wrap">
+      <div class="cab-secao reveal">
+        <p class="rotulo">Contato e localização</p>
+        <h2>Agende sua <strong>consulta</strong></h2>
+        <p>Atendimento mediante agendamento. Fale com nossa equipe por telefone ou WhatsApp.</p>
+      </div>
+
+      <div class="contato">
+        <div class="info reveal">
+          <div class="linha-info">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-wa"/></svg></div>
+            <div><small>WhatsApp</small><a href="https://wa.me/552731509669" target="_blank" rel="noopener">(27) 3150-9669</a></div>
+          </div>
+          <div class="linha-info">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-tel"/></svg></div>
+            <div><small>Telefone</small><a href="tel:+552731509669">(27) 3150-9669</a></div>
+          </div>
+          <div class="linha-info">
+            <div class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></div>
+            <div><small>Endereço</small><p>Av. Governador Santos Neves, 1271 — Centro<br>Linhares – ES · CEP 29900-035</p></div>
+          </div>
+          <a class="btn btn-prim" href="https://wa.me/552731509669?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Progastro." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-cal"/></svg>Agendar pelo WhatsApp
+          </a>
+        </div>
+
+        <div class="mapa reveal">
+          <iframe title="Mapa — Progastro Linhares"
+            src="https://www.google.com/maps?q=Av.+Governador+Santos+Neves,+1271,+Linhares+-+ES,+29900-035&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="rodape-grid">
+      <div>
+        <a href="#inicio" class="marca" aria-label="Progastro Linhares">
+          <svg class="rabisco" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M14 9l10-3-8 6 13-4-11 8 15-4-13 8 15-3-17 7 18-2-15 6 12-1-10 5 9 0" fill="none" stroke="#B7B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M38 4l-9 15" stroke="#C13828" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+          <span class="txt"><span class="pro">pro</span><span class="gastro">gastro</span><span class="cidade">LINHARES</span></span>
+        </a>
+        <p style="margin-top:18px;color:var(--cinza-texto);max-width:320px">Gastroenterologia, coloproctologia, endoscopia digestiva e cirurgia do aparelho digestivo.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p><a href="tel:+552731509669" style="text-decoration:none">(27) 3150-9669</a> · Telefone e WhatsApp</p>
+        <p>Av. Governador Santos Neves, 1271</p>
+        <p>Linhares – ES · CEP 29900-035</p>
+      </div>
+      <div>
+        <h4>Responsabilidade técnica</h4>
+        <p>Diretor Técnico: Dr. Jairo Rocha Filho</p>
+        <p>CRM-ES 3043 · RQE 3592 / 3593</p>
+        <p>Registro da clínica no CRM-ES: 2283</p>
+      </div>
+    </div>
+
+    <div class="legal">
+      <p><strong>PROGASTRO SERVICOS MEDICOS LTDA</strong> · Nome fantasia: Progastro · CNPJ 01.752.177/0001-07 · Registro CRM-ES nº 2283-ES · Diretor Técnico: Dr. Jairo Rocha Filho — CRM 3043-ES.</p>
+      <p>As informações deste site têm caráter exclusivamente informativo e educativo e não substituem a consulta médica. Diagnóstico e tratamento devem ser realizados por médico, em consulta.</p>
+      <p>© <span id="ano">2026</span> Progastro Linhares. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-flut" href="https://wa.me/552731509669?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Progastro." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <svg aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+<script>
+  // Menu mobile
+  const hamb = document.getElementById('hamb'), menu = document.getElementById('menu');
+  hamb.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    hamb.setAttribute('aria-expanded', aberto);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('aberto'); hamb.setAttribute('aria-expanded', false);
+  }));
+
+  // Borda do cabeçalho ao rolar
+  const topo = document.getElementById('topo');
+  addEventListener('scroll', () => topo.classList.toggle('rolou', scrollY > 8), {passive:true});
+
+  // Animação de entrada
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+    }), {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('on'));
+  }
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
